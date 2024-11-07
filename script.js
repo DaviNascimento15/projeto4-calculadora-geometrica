@@ -48,7 +48,7 @@ let largerBase = parseFloat(prompt('Digite a base maior do trapézio:'))
             alert('Área do círculo: ' + areaCircle(radius))
             break
         default:
-            alert('Opção inválida! Por favor, escolha uma opção válida.')
+            alert('Opção invalida.')
     }
     option = prompt('Escolha uma opção:\n1. Triângulo\n2. Retângulo\n3. Quadrado\n4. Trapézio\n5. Círculo\n6. Sair')
 } 
