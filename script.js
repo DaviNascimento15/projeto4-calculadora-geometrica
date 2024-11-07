@@ -19,7 +19,7 @@ function areaCircle(radius) {
     return pi * radius * radius
 }
 
-let option = prompt('Escolha uma opção:\n1. Triângulo\n2. Retângulo\n3. Quadrado\n4. Trapézio\n5. Círculo\n6. Sair')
+let option = prompt('escolha uma das opções:\n1. Triângulo\n2. Retângulo\n3. Quadrado\n4. Trapézio\n5. Círculo\n6. Sair')
 
 while (option !== '6') {
     switch (option) {
@@ -38,4 +38,17 @@ while (option !== '6') {
             alert('Área do quadrado: ' + areaSquare(squareSide))
             break
         case '4':
-    }}
+let largerBase = parseFloat(prompt('Digite a base maior do trapézio:'))
+            let smallerBase = parseFloat(prompt('Digite a base menor do trapézio:'))
+            let trapezeHeight = parseFloat(prompt('Digite a altura do trapézio:'))
+            alert('Área do trapézio: ' + areaTrapeze(largerBase, smallerBase, trapezeHeight))
+            break
+        case '5':
+            let radius = parseFloat(prompt('Digite o raio do círculo:'))
+            alert('Área do círculo: ' + areaCircle(radius))
+            break
+        default:
+            alert('Opção inválida! Por favor, escolha uma opção válida.')
+    }
+    option = prompt('Escolha uma opção:\n1. Triângulo\n2. Retângulo\n3. Quadrado\n4. Trapézio\n5. Círculo\n6. Sair')
+} 
